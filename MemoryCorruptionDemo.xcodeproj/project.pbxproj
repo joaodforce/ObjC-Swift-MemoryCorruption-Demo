@@ -14,9 +14,14 @@
 		85BFEA7029199C62006A42EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BFEA6F29199C62006A42EC /* Assets.xcassets */; };
 		85BFEA7329199C62006A42EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BFEA7129199C62006A42EC /* LaunchScreen.storyboard */; };
 		85BFEA7629199C62006A42EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BFEA7529199C62006A42EC /* main.m */; };
+		85BFEA7F29199FAA006A42EC /* PromiseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BFEA7E29199FAA006A42EC /* PromiseConverter.swift */; };
+		85BFEA8129199FDE006A42EC /* ObservableMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BFEA8029199FDE006A42EC /* ObservableMocks.swift */; };
+		B6B65F2B2909BD94DEC4CD35 /* Pods_MemoryCorruptionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DD8B537FC4B977409F1D3 /* Pods_MemoryCorruptionDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		213DD8B537FC4B977409F1D3 /* Pods_MemoryCorruptionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryCorruptionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57659029BBD9EF8C6DB6C3DF /* Pods-MemoryCorruptionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryCorruptionDemo.debug.xcconfig"; path = "Target Support Files/Pods-MemoryCorruptionDemo/Pods-MemoryCorruptionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		85BFEA6029199C62006A42EC /* MemoryCorruptionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryCorruptionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BFEA6329199C62006A42EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85BFEA6429199C62006A42EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +34,10 @@
 		85BFEA7229199C62006A42EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85BFEA7429199C62006A42EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85BFEA7529199C62006A42EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85BFEA7D29199FAA006A42EC /* MemoryCorruptionDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoryCorruptionDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		85BFEA7E29199FAA006A42EC /* PromiseConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseConverter.swift; sourceTree = "<group>"; };
+		85BFEA8029199FDE006A42EC /* ObservableMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMocks.swift; sourceTree = "<group>"; };
+		C874FDAA416BEE1126944A3D /* Pods-MemoryCorruptionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryCorruptionDemo.release.xcconfig"; path = "Target Support Files/Pods-MemoryCorruptionDemo/Pods-MemoryCorruptionDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B65F2B2909BD94DEC4CD35 /* Pods_MemoryCorruptionDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BC98E062274062AB6BD6532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57659029BBD9EF8C6DB6C3DF /* Pods-MemoryCorruptionDemo.debug.xcconfig */,
+				C874FDAA416BEE1126944A3D /* Pods-MemoryCorruptionDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		85BFEA5729199C62006A42EC = {
 			isa = PBXGroup;
 			children = (
 				85BFEA6229199C62006A42EC /* MemoryCorruptionDemo */,
 				85BFEA6129199C62006A42EC /* Products */,
+				1BC98E062274062AB6BD6532 /* Pods */,
+				EF1DBF06EFBB504FFDF51494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +82,7 @@
 		85BFEA6229199C62006A42EC /* MemoryCorruptionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				85BFEA7C29199C6C006A42EC /* Swift */,
 				85BFEA6329199C62006A42EC /* AppDelegate.h */,
 				85BFEA6429199C62006A42EC /* AppDelegate.m */,
 				85BFEA6629199C62006A42EC /* SceneDelegate.h */,
@@ -76,6 +98,24 @@
 			path = MemoryCorruptionDemo;
 			sourceTree = "<group>";
 		};
+		85BFEA7C29199C6C006A42EC /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				85BFEA7E29199FAA006A42EC /* PromiseConverter.swift */,
+				85BFEA7D29199FAA006A42EC /* MemoryCorruptionDemo-Bridging-Header.h */,
+				85BFEA8029199FDE006A42EC /* ObservableMocks.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		EF1DBF06EFBB504FFDF51494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				213DD8B537FC4B977409F1D3 /* Pods_MemoryCorruptionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85BFEA7929199C63006A42EC /* Build configuration list for PBXNativeTarget "MemoryCorruptionDemo" */;
 			buildPhases = (
+				8CFECA60C5280EA684099160 /* [CP] Check Pods Manifest.lock */,
 				85BFEA5C29199C62006A42EC /* Sources */,
 				85BFEA5D29199C62006A42EC /* Frameworks */,
 				85BFEA5E29199C62006A42EC /* Resources */,
+				D5D9BA97B40B2785F5E8D116 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,6 +149,7 @@
 				TargetAttributes = {
 					85BFEA5F29199C62006A42EC = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -141,14 +184,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CFECA60C5280EA684099160 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoryCorruptionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D9BA97B40B2785F5E8D116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryCorruptionDemo/Pods-MemoryCorruptionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryCorruptionDemo/Pods-MemoryCorruptionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemoryCorruptionDemo/Pods-MemoryCorruptionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85BFEA5C29199C62006A42EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				85BFEA6B29199C62006A42EC /* ViewController.m in Sources */,
+				85BFEA7F29199FAA006A42EC /* PromiseConverter.swift in Sources */,
 				85BFEA6529199C62006A42EC /* AppDelegate.m in Sources */,
 				85BFEA7629199C62006A42EC /* main.m in Sources */,
+				85BFEA8129199FDE006A42EC /* ObservableMocks.swift in Sources */,
 				85BFEA6829199C62006A42EC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,9 +374,11 @@
 		};
 		85BFEA7A29199C63006A42EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57659029BBD9EF8C6DB6C3DF /* Pods-MemoryCorruptionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,15 +396,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaodforce.MemoryCorruptionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoryCorruptionDemo/Swift/MemoryCorruptionDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		85BFEA7B29199C63006A42EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C874FDAA416BEE1126944A3D /* Pods-MemoryCorruptionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -333,6 +427,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaodforce.MemoryCorruptionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoryCorruptionDemo/Swift/MemoryCorruptionDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

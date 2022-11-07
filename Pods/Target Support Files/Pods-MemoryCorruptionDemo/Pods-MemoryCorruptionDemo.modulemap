@@ -1,0 +1,6 @@
+framework module Pods_MemoryCorruptionDemo {
+  umbrella header "Pods-MemoryCorruptionDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
